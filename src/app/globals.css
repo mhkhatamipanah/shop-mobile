@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: vazir-regular;
+  src: url("../../public/Assets/Fonts/Vazir-Regular.ttf");
+}
+@font-face {
+  font-family: IRANSans;
+  src: url("../../public/Assets/Fonts/IRANSans.ttf");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*===== CSS Resets =====*/
+
+/* input,
+button,
+textarea {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+} */
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  /* max-width: 100%; */
+  /* height: auto; */
+}
+
+/*===== Global Variables =====*/
+:root {
+  --color-1: #ffffff;
+  --color-2: #000000;
+  --color-3: #585858;
+  --color-4: #202324;
+  --color-5: #454a4d;
+  --color-6: #60696e;
+  --shadow: inset 8px 8px 10px rgba(255, 255, 255, 0.2),
+    inset -10px -10px 15px rgba(0, 0, 0, 0.9);
+  --font-1: vazir-regular;
+}
+
+.font-1 {
+  font-family: var(--font-1) !important;
+}
+.font-2 {
+  font-family: IRANSans  !important;
+}
+.rtl {
+  direction: rtl;
+}
+/*===== Custom Variables =====*/
+
+/* 1) Mobile */
+/* 2) PC */
+/* 3) Dashbord */
+
+/* 1) Mobile */
+
+/* 1-nav */
+/* 2-drawler-bottom */
+/* 3-brands */
+/* 4-shopping basket */
+/* 5-account */
+
+
+/* nav */
+.sizeNav{
+  font-size: 10px !important;
+  padding: 8px 0 8px 0 !important;
+}
+
+.active button{
+color: #151515;
+}
+
+.MuiBadge-badge{
+  font-family: IRANSans  !important;
+font-size: 10px !important;
+}
+/* drawler-bottom */
+.border-radius-drawler div:nth-child(3){
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* brands */
+.hideScrollBarX::-webkit-scrollbar{
+  display: none;
+}
+.hideScrollBarX{
+  scrollbar-width: none; 
+  display: flex;
+height: max-content;
+overflow-y: hidden;
+position: relative;
+width: 100%;
+}
+
+/* shopping basket */
+.cardBasket:last-child{
+  margin-bottom: 6.5rem;
+
+}
+
+/* account */
+.css-10hburv-MuiTypography-root{
+  font-family: var(--font-1);
+}
+/* resSearch */
+.resSearch:last-child{
+  margin-bottom: 4.5rem;
+}
